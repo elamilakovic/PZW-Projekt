@@ -1,0 +1,16 @@
+{% extends "homepage.html" %}
+
+{% block content %}
+<br>
+<h2>Članstvo</h2>
+<br>
+{% for clanstvo in clanstvoList %}
+<div class="clanstvo">
+    <h4>{{clanstvo.trajanje_clanstva}}</h4>
+    <p>Dugovanje: {{clanstvo.dugovanje}}</p>
+    <p>Odobrenje_posudbe: {{clanstvo.odobrenje_posudbe}}</p>
+    <p>Trajanja_clanstva: {{clanstvo.trajanje_clanstva}}</p>
+</div>
+
+{% endfor %}
+{% endblock %}

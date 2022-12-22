@@ -1,0 +1,16 @@
+{% extends "homepage.html" %}
+
+{% block content %}
+<br>
+<h2>Autori</h2>
+    <ul>
+        {% for autor in autorList %}
+            <li>
+                Ime: {{ autor.ime }}<br>
+                Prezime: {{ autor.prezime }}<br>
+                Titula: {{ autor.titula }}<br>
+                Predgovor: {{autor.predgovor}}<br>
+            </li>
+        {% endfor %}
+    </ul>
+{% endblock %}

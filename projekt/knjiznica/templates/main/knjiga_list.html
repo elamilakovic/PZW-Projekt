@@ -1,0 +1,18 @@
+{% extends "homepage.html" %}
+{% block content %}
+<br>
+<h2>Knjige</h2>
+<br>
+{% for knjiga in knjigaList %}
+<div class="knjiga">
+    <h4>{{knjiga.naslov}}</h4>
+    <p> sadrzaj: <p>{{knjiga.sadrzaj}}</p>
+    <p> izdavanje: {{knjiga.izdavanje}}</p>
+    <p> nakladnik: {{knjiga.nakladnik}}</p>
+    <p> dostupnost: {{knjiga.dostupnost}}</p>
+    <p> autorKnjige: {{knjiga.autorKnjige}} </p>
+    <p> zanrovi: {{knjiga.zanrovi}}</p>0
+    <p> kategorijaKnjige: {{knjiga.kategorijaKnjige}} </p>
+</div>
+{% endfor %}
+{% endblock %}
