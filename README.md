@@ -1,7 +1,7 @@
 # PZW-Projekt
 Knjižnica
 
-Kreirale: Natali Antunović i Ela Milaković
+Kreirala: Ela Milaković
 
 Dobro došli u Knjižnicu!
 Ovdje možete birati autore knjiga koje tražite, te će Vam stranica vratiti prezimena autora koja imamo u bazi. 
