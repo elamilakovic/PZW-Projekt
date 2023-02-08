@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset = "utf-8">
+    <title>Knjižnica</title>
+{% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+    <title>{% block title %}Knjižnica{% endblock %}</title>
+</head>
+
+<body>
+    <h1>Knjižnica</h1>
+    <div id="sidebar">
+        {% block sidebar %}
+
+        <ul>  
+            <li><a href="">Naslovna</a></liv>
+            <li><a href="/Autori">Autori</a></liv>
+            <li><a href="/AutoriIme">Autori po imenu</a></liv>
+            <li><a href="/Knjigas">Knjige</a></liv>
+            <li><a href="/KnjigePretraga">Knjige pretražene po riječi</a></liv>
+            <li><a href="/Clanstvos">Članstvo</a></liv>
+            <li><a href="/Kategorijas">Kategorije</a></liv>
+            <li><a href="/Zanrs">Žanrovi</a></liv>
+        </ul>
+        
+        {% endblock %}
+    </div>
+
+    <div class="content">
+        {% block content %}
+        {% endblock %}
+    </div>
+</body>
+</html>

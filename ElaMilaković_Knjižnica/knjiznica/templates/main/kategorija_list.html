@@ -1,0 +1,18 @@
+{% extends 'homepage.html' %}
+{% load static %}
+{% block content %}
+<br>
+<h2>Kategorije knjiga</h2>
+<br>
+<h3>Vrste kategorija</h3><br>
+<ul>
+    {% for ka in Kategorijas %}
+        <li>
+            <p>Edukativna_namjena: {{ka.edukativna_namjena}}<br></p>
+            <p>Dobna skupina:{{ka.dobna_skupina }}<br></p>
+        </li>
+    {% endfor %}
+</ul>
+
+{% endblock %}
+

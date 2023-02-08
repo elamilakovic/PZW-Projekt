@@ -1,0 +1,16 @@
+{% extends 'homepage.html' %}
+{% load static %}
+{% block content %}
+<br>
+<h2>Autori: 'A'</h2>
+<br>
+<ul>
+    {% for a in AutoriIme %}
+        <li>
+            <p>Ime: {{ a.ime }}<br></p>
+            <p>Prezime: {{ a.prezime }}<br></p>
+        </li>
+    {% endfor %}
+</ul>
+
+{% endblock %}

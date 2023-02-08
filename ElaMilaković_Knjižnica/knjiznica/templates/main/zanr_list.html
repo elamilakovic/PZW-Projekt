@@ -1,0 +1,15 @@
+{% extends 'homepage.html' %}
+{% load static %}
+{% block content %}
+<br>
+<h2>Žanrovi</h2>
+<br>
+<ul>
+    {% for z in Zanrs %}
+        <li>
+            <p>Žanr: {{z.zanr}}<br></p>
+        </li>
+    {% endfor %}
+</ul>
+
+{% endblock %}

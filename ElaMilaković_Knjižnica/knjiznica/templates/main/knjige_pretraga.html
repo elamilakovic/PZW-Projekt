@@ -1,0 +1,19 @@
+{% extends 'homepage.html' %}
+{% load static %}
+{% block content %}
+<br>
+<h2>Knjige pretraga</h2>
+<br>
+<ul>
+    {% for k in KnjigePretraga %}
+        <li>
+            Naslov: {{ k.naslov }}<br>
+            <p>Sadrzaj: {{ k.sadrzaj }}<br></p>
+            <p>Izdavanje: {{ k.izdavanje }}<br></p>
+            <p>Nakladnik: {{ k.nakladnik }}<br></p>
+            <p>Dostupnost: {{ k.dostupnost }}<br></p>
+            <p>Autor Knjige: {{ k.autorKnjige }}<br></p>
+        </li>
+    {% endfor %}
+</ul>
+{% endblock %}
